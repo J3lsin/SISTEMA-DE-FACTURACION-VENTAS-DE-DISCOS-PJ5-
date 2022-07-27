@@ -1,0 +1,33 @@
+<!---->
+{% extends "maestra.html" %}
+{% block titulo %}
+Editar juego
+{% endblock %}
+{% block contenido %}
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="is-size-3">Login</h3>
+
+            <form action="{{url_for('login')}}" class="formulario__login" method="post">
+                {# Enviar el id en un campo oculto #}
+            <label for="nombre">Usuario:</label>
+                <input required type="text" class="input" placeholder="Usuario" name="usuario" id="usuario">
+                <label for="descripcion">Contraseña</label>
+                <input required type="password" class="input" placeholder="Contraseña" name="pws" id="pws">
+                <button type="submit" class="button is-success" >Entrar </button>
+            </form>
+
+        <!--    <form action="{{url_for('login')}}" method="post">
+                {# Enviar el id en un campo oculto #}
+                <label for="nombre">Usuario:</label>
+                <input required type="text" class="input" placeholder="Usuario" name="usuario" id="usuario">
+                <label for="descripcion">Contraseña</label>
+                <input required type="password" class="input" placeholder="Contraseña" name="pws" id="pws">
+                <button type="submit" class="button is-success mt-2">Ingresar</button>
+
+            </form>-->
+        </div>
+    </div>
+</section>
+{% endblock %}-->

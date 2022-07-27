@@ -1,0 +1,285 @@
+*{
+    margin: 1%;
+    padding: 5px 10px 5px;
+    border-radius: 30px;
+    font-family: cursive;
+}
+
+body{
+    background-image: url(../static/pj5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+/*div.logo{
+    background-image: url(../static/logo.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}*/
+
+
+
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+}
+label{
+    font-size: medium;
+    font-weight: 300;
+    font-style: italic;
+    color: #f0f0f5;
+}
+.h3{
+    width: 80%;
+    margin: auto;
+    padding: 8px 15px 8px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgb(10 14 18 / 50%);
+
+}
+h3{
+    font-style: italic;
+    color: #f0f0f5;
+    text-align: center;
+    font-size: xxx-large;
+}
+.s{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+
+
+
+a.btnu {
+    position: absolute;
+    color: black;
+    font-size: x-large;
+    border-style: inset;
+    padding: 10px 15px 10px;
+    border-radius: 15px;
+}
+
+/*.columns{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+
+   
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}*/
+
+
+/*.column form{
+    background-color: #070708;
+    margin: auto;
+    width: 90%;
+    padding: 4,5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}*/
+
+/*tabla*/
+table{
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    backdrop-filter: blur(10px);
+    background-color: rgb(10 14 18 / 50%);
+}
+
+/*.columns{
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}*/
+
+
+.div3columns{
+    background-color: aqua;
+}
+
+.columns{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+/*
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .columns{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+*/
+
+/*formulario venta*/
+.venta {
+    
+    width: 400px;
+    height: 550px;
+    padding: 1rem;
+    margin: 2rem;
+    margin-left: 400px;
+    background-color: rgba(199, 198, 201, 0.5);
+    text-align: center;
+    left: 0px;
+    top: 50px;
+    border-radius: 150%;
+   
+}
+
+.create-a {
+    
+    padding: 2.7rem 0;
+    font-size:30px;
+    color: #070708;
+    text-shadow: 1px 1px 1px rgb(5, 5, 1);
+    font-weight:lighter;
+}
+
+.venta input {
+
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: rgb(31, 1, 1) thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: rgb(58, 31, 31);
+}
+
+.venta button[type="submit"] {
+    width: 60%;
+    margin: auto;
+    padding: .7rem;
+    margin-top: 1rem;
+    font-size: .8rem;
+    cursor: pointer;
+
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: rgb(246, 240, 149);
+}
+
+.venta button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(228, 187, 187, 0.2);
+}
+   
+.venta button[type="submit"]:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(74, 146, 143, 0.2);
+}
+   
+.venta button[type="submit"]::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+   
+.venta button[type="submit"]::after {
+    background-color: rgb(152, 142, 142);
+   }
+   
+.venta button[type="submit"]:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.redes-sociales {
+	padding: 8px;
+  width: 50%;
+  align-content: center;
+	
+}
+
+.redes-sociales img {
+	padding: 5px;
+	border-radius: 100%;
+	width: 50px;
+	transition: .3s ease all;
+}
+
+.redes-sociales img:hover {
+	transform: scale(1.2);
+}

@@ -1,0 +1,50 @@
+{% extends "maestra.html" %}
+{% block titulo %}
+ventas, juegos
+{% endblock %}
+{% block contenido %}
+
+<div class="modal">
+    {% if session["logged"] %}
+    <span class="log">Logueado como {{ session["usuario"] }}  </span> <a href="{{url_for('logout')}}" class="negrito">Exit</a>
+
+       
+    {% else %}
+      
+    {% endif %}
+    
+    <form class="venta" action="{{url_for('guardar_venta')}}" method="post">
+        <h5 class="create-a">Registro</h5>
+        
+        <select required name="id_tipo_comprobante" id="id_tipo_comprobante">
+            <option >Tipo de comprobante</option>
+            {% for tipo_comprobante in tipo_comprobantes %}
+            <option value="{{tipo_comprobante[0]}}">{{tipo_comprobante[1]}}</option>
+            {% endfor %}
+        </select>
+        <br></br>
+        
+       
+        <input required type="date" class="input" placeholder="Fecha" name="fecha" id="fecha">
+        <input required type="text" class="input" placeholder="Direccion" name="direccion" id="direccion">
+        <input required type="text" class="input" placeholder="Nombre del Cliente" name="name_c" id="name_c">
+       
+
+        
+        <select required name="id_pj5" id="id_pj5">
+            <option >Seleccionar Disco</option>
+            {% for juego in juegos_en_venta %}
+            <option  value="{{juego[0]}}">{{juego[1]}}</option>
+            {% endfor %}
+        </select>
+        <br></br>
+        <input required type="text" class="input" placeholder="Cantidad" name="cantidad" id="cantidad">
+      
+
+        <button type="submit" class="btn-checkbox">Registrar</button>
+    </form>
+
+   
+</div>
+
+{% endblock %}
